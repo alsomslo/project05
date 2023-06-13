@@ -1,0 +1,235 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    width: 100%;
+
+    z-index: 999;
+}
+
+.header.on {
+    border-bottom: 1px solid #ddd
+}
+
+.header img {
+    height: 36px;
+}
+
+
+.header .header_wrap {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    transition: 0.5s;
+
+}
+
+.header.on .header_warp {
+    height: 50px;
+
+
+
+}
+
+.gnb ul {
+    display: flex;
+    gap: 70px;
+    font-size: 18px;
+
+}
+
+.itm {
+    position: relative;
+    height: 500px;
+}
+
+.mainvisual .mainslide .itm01 {
+    background: url(../images/main01.jpg)no-repeat center center/cover;
+
+}
+
+.mainvisual .mainslide .itm02 {
+    background: url(../images/main02.jpg)no-repeat center center/cover;
+
+}
+
+.mainvisual .mainslide .itm03 {
+    background: url(../images/main03.jpg)no-repeat center center/cover;
+
+}
+
+.mainvisual .mainslide .itm04 {
+    background: url(../images/main04.png)no-repeat center center/cover;
+    /
+}
+
+.mainvisual .mainslide .itm05 {
+    background: url(../images/main05.jpg)no-repeat center center/cover;
+
+}
+
+
+
+.mainvisual .mainslide .slick-dots {
+    position: absolute;
+    bottom: 20px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+
+
+}
+
+.mainvisual .mainslide .slick-dots>li {
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.mainvisual .mainslide .slick-dots li.slick-active {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    margin: 0 10px -2px 0;
+}
+
+.mainvisual .mainslide .slick-dots button {
+    display: none;
+}
+
+.maincontent {
+    padding: 100px 0;
+}
+
+.maincontent .content {
+    display: grid;
+    top: 0;
+    left: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 280px;
+
+    align-items: center;
+
+}
+
+
+
+.maincontent .content .order a {
+    position: relative;
+    display: block;
+    margin: 0 0 15px 0;
+
+
+
+
+
+
+
+
+}
+
+.maincontent .content .order strong {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 42px;
+    margin: 0 10px 0 0;
+
+}
+
+
+
+.maincontent .content .order a>i {
+
+    position: absolute;
+    color: #fff;
+
+    border-radius: 100%;
+    font-size: 16px;
+
+
+    padding: 12px;
+
+}
+
+.maincontent .content .box01 i {
+    background: #ff143c;
+
+}
+
+.maincontent .content .box02 i {
+    background: #1382ff;
+
+}
+
+.maincontent .content .box03 i {
+    background: #000
+}
+
+.maincontent .content .order p {
+    line-height: 1.4;
+    color: #888;
+    padding: 0;
+}
+
+.maincontent .content .box01 strong {
+    color: #ff143c;
+}
+
+.maincontent .content .box02 strong {
+    color: #1382ff;
+}
+
+
+
+.mainevent {
+    padding: 100px 0;
+    background: #ddd;
+
+
+}
+
+.mainevent .event {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainevent .login01 h2 {
+    margin: 0 0 30px 0;
+}
+
+
+.mainevent .login01 p {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.mainevent .login01 .q {
+    font-size: 28px;
+    color: #238ece;
+}
+
+.mainevent .log {
+    display: inline;
+    color: #fff;
+    background: #000;
+    padding: 8px 30px;
+    border-radius: 20px;
+}
+
+.mainevent .login02 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
