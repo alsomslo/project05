@@ -1,6 +1,6 @@
 .title {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     padding: 0 15px;
 }
 
@@ -13,6 +13,7 @@
     top: 0;
     background: #fff;
     width: 100%;
+    border-bottom: 1px solid transparent;
 
     z-index: 999;
 }
@@ -37,8 +38,8 @@
 
 }
 
-.header.on .header_warp {
-    height: 50px;
+.header.on .header_wrap {
+    height: 60px;
 
 
 
@@ -73,7 +74,7 @@
 
 .mainvisual .mainslide .itm04 {
     background: url(../images/main04.png)no-repeat center center/cover;
-    /
+
 }
 
 .mainvisual .mainslide .itm05 {
@@ -117,67 +118,108 @@
     display: none;
 }
 
-.main_menu .menu {
-    display: flex;
-    gap: 30px;
-    min-height: 400px;
-
+.mainmenu {
+    padding: 100px 0;
 }
 
-.main_menu .menu>* {
-    flex: 1;
+.mainmenu .title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mainmenu .menu {
     border-bottom: 1px solid #ddd;
 }
 
-.main_menu .menu .pz_content li {
-    position: relative;
-    margin: 0 0 30px 0;
-    padding: 0 0 0 30px;
+
+
+
+
+.mainmenu .menu .menu_bar {
     display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+
+
+
+}
+
+.mainmenu .menu .menu_bar li {
+    background: rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 388px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+
+
+}
+
+.mainmenu .menu .menu_bar li.on {
+    background: #111;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainmenu .menu .pz_menu {
+    margin: 0 0 40px 0;
+}
+
+
+.mainmenu .menu .pz_menu li {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-
-}
-
-.main_menu .hmenu .pz_content strong {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.main_menu .menu .pz_content li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border: 1px solid tomato;
-    border-radius: 50%;
-}
-
-.main_menu .menu .pz_content li:not(:last-child):after {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 15px;
-    bottom: -25px;
-    width: 2px;
-
-    background: tomato;
-
-}
-
-.main_menu .menu .pz_menu li {
     height: 0;
     overflow: hidden;
 }
 
-.main_menu .hmenu .pz_menu li.on {
+.mainmenu .menu .pz_menu li.on {
     height: auto;
 }
 
-.main_menu .menu .pz_menu figure {
+.mainmenu .menu .pz_menu .img_box h3 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.mainmenu .menu .pz_menu .img_box span {
+    color: #fff;
+    background: #ff0000d0;
+    font-size: 9px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 0 0 0 2px;
+}
+
+.mainmenu .menu .pz_menu .img_box p {
+    font-size: 14px;
+    line-height: 1.4;
+
+}
+
+.mainmenu .menu .pz_menu figure {
     margin: 0 0 10px 0;
 }
+
+
+
 
 .maincontent {
     padding: 100px 0;
