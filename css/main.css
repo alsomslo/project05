@@ -1,3 +1,13 @@
+.title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+
+
 .header {
     position: sticky;
     top: 0;
@@ -105,6 +115,68 @@
 
 .mainvisual .mainslide .slick-dots button {
     display: none;
+}
+
+.main_menu .menu {
+    display: flex;
+    gap: 30px;
+    min-height: 400px;
+
+}
+
+.main_menu .menu>* {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.main_menu .menu .pz_content li {
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 30px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.main_menu .hmenu .pz_content strong {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main_menu .menu .pz_content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid tomato;
+    border-radius: 50%;
+}
+
+.main_menu .menu .pz_content li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    bottom: -25px;
+    width: 2px;
+
+    background: tomato;
+
+}
+
+.main_menu .menu .pz_menu li {
+    height: 0;
+    overflow: hidden;
+}
+
+.main_menu .hmenu .pz_menu li.on {
+    height: auto;
+}
+
+.main_menu .menu .pz_menu figure {
+    margin: 0 0 10px 0;
 }
 
 .maincontent {
@@ -232,5 +304,90 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+
+}
+
+.mainbanner {
+    padding: 100px 0;
+
+}
+
+.mainbanner .banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.footer {
+    background: #f9f9f9;
+
+
+}
+
+.footer .ft {
+    padding: 30px 0;
+    color: #777;
+}
+
+.footer .ft .ft_order {
+    margin: 30px 0;
+    color: #000;
+
+}
+
+.footer .ft .ft_order img {
+    height: 26px;
+    width: 123px;
+
+}
+
+.footer .ft .ft_order span {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.footer .ft .top {
+    display: flex;
+    margin: 0 0 30px 0;
+    justify-content: space-between;
+}
+
+.footer .ft .top .dl {
+    color: #000;
+
+
+}
+
+.footer .ft .top .dl span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer .ft .top .dl i {
+    font-size: 26px;
+}
+
+.footer .ft .top .b {
+    color: #000;
+    font-weight: 500;
+}
+
+.footer .ft .top ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer .ft .bottom {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+.footer .ft .bottom .icon {
+    font-size: 26px;
 
 }
