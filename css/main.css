@@ -13,6 +13,7 @@
     top: 0;
     background: #fff;
     width: 100%;
+
     border-bottom: 1px solid transparent;
 
     z-index: 999;
@@ -29,28 +30,60 @@
 
 .header .header_wrap {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+
+
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 100px;
+    line-height: 100px;
     transition: 0.5s;
+
 
 }
 
 .header.on .header_wrap {
     height: 60px;
+    line-height: 60px;
 
 
 
 }
 
-.gnb ul {
+
+.header .gnb ul {
     display: flex;
-    gap: 70px;
+
     font-size: 18px;
 
+
 }
+
+.header .gnb ul>li {
+    position: relative;
+    padding: 0 30px;
+}
+
+.header .gnb ul>li:hover {
+    transition: 0.5s;
+    background: #ddddddb9;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .itm {
     position: relative;
@@ -82,36 +115,61 @@
 
 }
 
+.mainvisual .mainslide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    border-top: 1px solid rgba(255, 255, 255, 1);
+
+    cursor: pointer;
+}
+
+.mainvisual .mainslide .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mainvisual .mainslide .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
 
 
 .mainvisual .mainslide .slick-dots {
     position: absolute;
     bottom: 20px;
-
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 999;
-
-
+    cursor: pointer;
 
 }
 
 .mainvisual .mainslide .slick-dots>li {
     display: inline-block;
-    margin: 0 2px;
     width: 10px;
     height: 10px;
-
     background: transparent;
     border: 1px solid #fff;
     border-radius: 50%;
+    margin: 0 8px 0 0;
 }
 
 .mainvisual .mainslide .slick-dots li.slick-active {
     width: 14px;
     height: 14px;
     background: #fff;
-    margin: 0 10px -2px 0;
+    margin: 0 8px -2px 0;
 }
 
 .mainvisual .mainslide .slick-dots button {
@@ -125,12 +183,11 @@
 .mainmenu .title h2 {
     font-size: 50px;
     font-weight: 700;
+    font-family: 'Noto Sans KR';
     text-align: center;
 }
 
-.mainmenu .menu {
-    border-bottom: 1px solid #ddd;
-}
+.mainmenu .menu {}
 
 
 
@@ -140,6 +197,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 50px 0;
+    cursor: pointer;
 
 
 
@@ -221,89 +279,7 @@
 
 
 
-.maincontent {
-    padding: 100px 0;
-}
 
-.maincontent .content {
-    display: grid;
-    top: 0;
-    left: 0;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-
-
-
-
-
-}
-
-
-
-
-
-.maincontent .content .order a {
-    position: relative;
-    display: block;
-
-    margin: 0 0 15px 0;
-
-}
-
-
-
-
-
-.maincontent .content .order strong {
-
-    font-weight: 400;
-    font-size: 42px;
-    margin: 0 10px 0 0;
-
-}
-
-
-
-.maincontent .content .order a>i {
-
-    position: absolute;
-    color: #fff;
-
-    border-radius: 100%;
-    font-size: 16px;
-
-
-    padding: 12px;
-
-}
-
-.maincontent .content .box01 i {
-    background: #ff143c;
-
-}
-
-.maincontent .content .box02 i {
-    background: #1382ff;
-
-}
-
-.maincontent .content .box03 i {
-    background: #000
-}
-
-.maincontent .content .order p {
-    line-height: 1.4;
-    color: #888;
-    padding: 0;
-}
-
-.maincontent .content .box01 strong {
-    color: #ff143c;
-}
-
-.maincontent .content .box02 strong {
-    color: #1382ff;
-}
 
 
 
